@@ -181,11 +181,11 @@ if ( ! function_exists( 'ibooks_woocommerce_cart_link' ) ) {
 	 */
 	function ibooks_woocommerce_cart_link() {
 		?>
-		<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', '_ibooks' ); ?>">
+		<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'ibooks' ); ?>">
 			<?php
 			$item_count_text = sprintf(
 				/* translators: number of items in the mini cart. */
-				_n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), '_ibooks' ),
+				_n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'ibooks' ),
 				WC()->cart->get_cart_contents_count()
 			);
 			?>

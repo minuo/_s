@@ -155,6 +155,10 @@ function ibooks_scripts()
 }
 add_action('wp_enqueue_scripts', 'ibooks_scripts');
 
+
+// SVG Icons class.
+require get_template_directory() . '/classes/class-ibooks-svg-icons.php';
+
 /**
  * Implement the Custom Header feature.
  */

@@ -43,7 +43,7 @@ add_action( 'after_setup_theme', 'ibooks_woocommerce_setup' );
  * @return void
  */
 function ibooks_woocommerce_scripts() {
-	wp_enqueue_style( 'ibooks-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), ibooks_VERSION );
+	wp_enqueue_style( 'ibooks-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), IBOOKS_VERSION );
 
 	$font_path   = WC()->plugin_url() . '/assets/fonts/';
 	$inline_font = '@font-face {
